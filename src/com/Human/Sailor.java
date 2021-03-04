@@ -5,9 +5,9 @@ public class Sailor extends Human{
     public Sailor(String fname, String lname, byte age){
         super(fname,lname,age,"Sailor");
     }
-    public Sailor(String fname, String lname, byte age, int hours){
+    public Sailor(String fname, String lname, byte age, int sailings){
         super(fname,lname,age,"Sailor");
-        if(hours>0) { this.sailings=hours; }
+        if(sailings>0) { this.sailings=sailings; }
     }
     public int getSailings(){ return this.sailings; }
     public void setSailings(int value){
