@@ -39,4 +39,8 @@ public class Human {
             System.out.println("Error on changing: the age can not be negative");
         }
     }
+    @Override
+    public String toString(){
+        return this.lname+" "+this.fname+" ("+this.age+(this.profession!=null?", "+this.profession:"")+")";
+    }
 }
