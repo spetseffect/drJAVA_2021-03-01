@@ -1,0 +1,37 @@
+task1
+public class Human{
+	public string fname;
+	public string lname;
+	public int age;
+	public Human(){}
+	public Human(string fn, string ln, int ag){
+		this.fname=fn;
+		this.lname=ln;
+		this.age=ag;
+	}
+}
+public class Builder extends Human{
+	public Builder(string fn, string ln, int ag){
+		super(fn,ln,ag);
+	}
+	public toBuild(){
+		System.out.println("I can build.");
+	}
+}
+public class Sailor extends Human{
+	public Sailor(string fn, string ln, int ag){
+		super(fn,ln,ag);
+	}
+	public toSwim(){
+		System.out.println("I can swim.");
+	}
+}
+public class Pilot extends Human{
+	public Pilot(string fn, string ln, int ag){
+		super(fn,ln,ag);
+	}
+	public toFly(){
+		System.out.println("I can fly.");
+	}
+}
+---------------------------
