@@ -1,17 +1,17 @@
 package com.Money;
 
 public class Money {
-    private String name;
+    private Currency name;
     private int intPart=0;
     private int floatPart=0;
     public Money() {}
-    public Money(String name) {
+    public Money(Currency name) {
         this.name = name;
     }
-    public String getName() {
+    public Currency getName() {
         return name;
     }
-    public void setName(String name) {
+    public void setName(Currency name) {
         this.name = name;
     }
     public double getValue() {
