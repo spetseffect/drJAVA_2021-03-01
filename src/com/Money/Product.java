@@ -27,4 +27,8 @@ public class Product {
     public void priceDown(double value){
         this.price.subtraction(value);
     }
+    @Override
+    public String toString(){
+        return "'"+getName()+"' - "+getPrice();
+    }
 }

@@ -8,6 +8,10 @@ public class Money {
     public Money(Currency name) {
         this.name = name;
     }
+    public Money(Currency name, double number) {
+        this.name = name;
+        this.setValue(number);
+    }
     public Currency getName() {
         return name;
     }
@@ -34,5 +38,9 @@ public class Money {
     }
     public void subtraction(double arg){
         this.addition(arg*(-1));
+    }
+    @Override
+    public String toString(){
+        return getValue()+" "+getName();
     }
 }
