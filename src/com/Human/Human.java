@@ -39,6 +39,12 @@ public class Human {
             System.out.println("Error on changing: the age can not be negative");
         }
     }
+    public String getProfession(){ return profession; }
+    public void setProfession(String value){
+        // here any checks depending on your needs
+        this.lname=value;
+        System.out.println("Last name changed successfully: "+this.profession);
+    }
     @Override
     public String toString(){
         return this.lname+" "+this.fname+" ("+this.age+(this.profession!=null?", "+this.profession:"")+")";
